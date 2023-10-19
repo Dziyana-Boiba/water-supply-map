@@ -1,0 +1,177 @@
+@use '../../styles/mixins/common.scss';
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pump-icon-container {
+  display: flex !important;
+  &.boost {
+    flex-direction: column-reverse;
+  }
+  &.elevation {
+    align-items: center;
+    .pump-pipe {
+      margin-top: 0px;
+      margin-left: -1px;
+      width: 100%;
+      min-width: 6px;
+      min-height: 3px;
+      height: 3px;
+    }
+    .pump-node {
+      margin-top: 0px;
+    }
+    .pump-station {
+      margin-left: -1px;
+    }
+  }
+  &.none {
+    flex-direction: column;
+  }
+  .pump-station {
+    @include common.flex(column, center, center);
+    border-radius: 9px;
+    background: rgb(230, 229, 229);
+    position: relative;
+    .pumps-container {
+      display: flex;
+      gap: 2px;
+      padding: 3px;
+      .pump {
+        @include common.flex(row, center, center);
+        @include common.font(6px, 600, 1, center);
+        width: 14px;
+        min-width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        border: 1.5px solid rgb(178, 178, 178);
+        color: #fff;
+        .pump-motor {
+          width: 10px;
+          height: 10px;
+          background: url('../../assets/images/pump-motor1.svg') no-repeat 50% 50% / contain;
+          &.anim {
+            animation: rotate 3s linear infinite;
+          }
+        }
+      }
+    }
+
+    .pump-station-flow {
+      @include common.font(10px, 700, 1, center);
+      padding: 0 5px 2px 5px;
+      margin-top: -2px;
+      span {
+        font-size: 6px;
+        margin-left: 3px;
+      }
+    }
+  }
+  .pump-pipe {
+    @include common.pipe;
+    margin-top: -1px;
+    flex-shrink: 1;
+  }
+  .pump-node {
+    @include common.node;
+    margin-top: -1px;
+    flex-shrink: 0;
+  }
+}
+
+.pump-popup {
+  font-family: 'Open Sans', sans-serif;
+  &.none {
+    &.withflow {
+      top: 64px !important;
+    }
+    top: 45px !important;
+  }
+  &.elevation {
+    &.withflow {
+      top: 30px !important;
+    }
+    top: 22px !important;
+  }
+  &.boost {
+    &.withflow {
+      top: 7px !important;
+    }
+    top: 7px !important;
+  }
+  /*  top: 65px !important; */
+
+  .leaflet-popup-content {
+    overflow: hidden;
+  }
+  .leaflet-popup-content-wrapper {
+    overflow: hidden;
+  }
+
+  &_name {
+    @include common.font(10px, 700, 1.5, center);
+    color: #555;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+  }
+
+  &_station {
+    margin-bottom: 15px;
+    padding: 0 10px;
+    table {
+      padding-left: 10px;
+    }
+  }
+
+  &_title {
+    @include common.font(10px, 700, 1, start);
+    color: #777;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  &_unit {
+    font-size: 8px;
+    margin-left: 5px;
+  }
+
+  &_sensor-alert {
+    font-size: 10px;
+    padding-left: 10px;
+  }
+
+  &_pumps {
+    padding: 0 10px;
+  }
+
+  &_pump-number {
+    @include common.flex(row, center, center);
+    @include common.font(7px, 600, 1, center);
+    width: 16px;
+    min-width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid rgb(178, 178, 178);
+    background: rgb(178, 178, 178);
+    color: #fff;
+    margin-right: 10px;
+  }
+
+  &_single-pump {
+    @include common.flex(row, flex-start, center);
+    padding: 5px;
+    margin-left: 10px;
+    border-bottom: 1px solid rgb(178, 178, 178);
+    &:last-child {
+      border: none;
+    }
+  }
+
+  &_station,
+  &_single-pump {
+    @include common.table;
+  }
+}

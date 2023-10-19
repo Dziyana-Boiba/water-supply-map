@@ -1,0 +1,59 @@
+@use '../../styles/mixins/common.scss';
+
+.monitoring-icon {
+  .mon-container {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid rgb(129, 129, 129);
+    background: rgb(230, 229, 229);
+    margin: 0 auto;
+    padding: 5px 4px;
+    .mon-display {
+      background: rgb(77, 77, 77);
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      margin: 8px 0 3px 0;
+      height: 14px;
+      border-radius: 2px;
+      padding: 0 2px;
+      font-size: 7px;
+      letter-spacing: 1px;
+      color: #fff;
+      font-family: 'CustomFontDigital';
+      .measurement-data {
+        text-align: end;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.2;
+        letter-spacing: 2px;
+        font-family: 'CustomFontDigital';
+      }
+    }
+    .unit {
+      .dot {
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+        border: 1px solid rgb(129, 129, 129);
+        display: none;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 2px;
+      font-size: 7px;
+      line-height: 1;
+      font-weight: 600;
+      font-family: 'Open Sans', sans-serif;
+    }
+  }
+  .pump-pipe {
+    @include common.pipe();
+  }
+  .pump-node {
+    @include common.node();
+  }
+}

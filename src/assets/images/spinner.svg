@@ -1,0 +1,5 @@
+<svg class="map-spinner" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="25" cy="25" r="20" stroke='rgb(178, 178, 178)' stroke-width='6' fill='transparent' stroke-linecap='round'></circle>
+<circle cx="25" cy="25" r="20" stroke='rgb(77, 77, 77)' stroke-width='3' fill='transparent' stroke-linecap='round'></circle>
+<circle class="water" cx="25" cy="25" r="20" stroke='#29ABE2' stroke-width='3' fill='transparent' stroke-linecap='round'></circle>
+</svg>

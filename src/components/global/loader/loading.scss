@@ -1,0 +1,57 @@
+@use '../../../styles/mixins/common';
+@use '../../../styles/mixins/animation';
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.overlay {
+  @include common.flex(row, center, center);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(54, 54, 54, 0.3);
+  backdrop-filter: blur(5px);
+  z-index: 10;
+}
+
+.spinner {
+  //@include animation.setAnimation(rotation, 3s, infinite, linear);
+  //background: url('../../../assets/images/spinner.svg') no-repeat 50% 50% / contain;
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 80px;
+  z-index: 11;
+  .water {
+    animation: dash 1.5s linear infinite;
+  }
+}
+
+.map-spinner {
+  .water {
+    animation: dash 3s ease-in-out infinite;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 180;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 180;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 180;
+    stroke-dashoffset: -150;
+  }
+}

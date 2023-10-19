@@ -1,0 +1,1486 @@
+{
+  "systems": [
+    {
+      "id": "f378236e-ba45-4742-bd05-108e263cf640",
+      "identifier": "Aveiro",
+      "name": "Aveiro",
+      "subsystems": [
+        {
+          "id": "5845eaec-fd2b-48a1-b8d3-41ef8f0e32fc",
+          "identifier": "aveirolagoon",
+          "name": "Aveiro Lagoon",
+          "system": "f378236e-ba45-4742-bd05-108e263cf640",
+          "infrastructures": [
+            {
+              "id": "a7119ac0-4e46-419e-bfcb-d4a652aab6b2",
+              "name": "Consumption Point Esgueira",
+              "node": {
+                "uuid": "023123c8-9080-4279-a643-636dcef70b13",
+                "latitude": 40.662208,
+                "longitude": -8.622965,
+                "next_connections": []
+              },
+              "class_type": "ConsumptionPoint",
+              "sensors": [
+                {
+                  "id": "c13a1ac0-e981-4736-b2ce-4f51cc1de757",
+                  "measurement": {
+                    "name": "flow",
+                    "type": "flow",
+                    "unit_short_pretty": "L/s"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "65925a00-dd06-4864-bdf6-ed9e01g643acb",
+              "name": "Pumping Station Esgueira - Aveiro",
+              "class_type": "PumpingStation",
+              "type": "none",
+              "node": {
+                "uuid": "ab7c2318-2314-407a-8393-996bbbgh83413e",
+                "latitude": 40.671127,
+                "longitude": -8.634294,
+                "next_connections": [
+                  "0dda12ea-0fcb-4bae-b2cd-a93846ab9345",
+                  "9d61d340-c214-4ec5-acd9-4fbb04d6f5ce",
+                  "023123c8-9080-4279-a643-636dcef70b13"
+                ]
+              },
+              "pumps": [
+                {
+                  "id": "53422e32-6b3a-4a20-ae2a-6679dgh7b3fa0d",
+                  "class_type": "Pump",
+                  "node": null,
+                  "sensors": [
+                    {
+                      "id": "8e223746-7c0c-45bb-b9fc-3fea1gh7ef3d24",
+                      "measurement": {
+                        "name": "current",
+                        "type": "current",
+                        "unit_short_pretty": "A"
+                      }
+                    },
+                    {
+                      "id": "d6aeb987-2d0e-434b-a5b8-4fe8dfdf49853",
+                      "measurement": {
+                        "name": "frequency",
+                        "type": "frequency",
+                        "unit_short_pretty": "Hz"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "3fb5d0bb-0ea0-4214-81f6-a92accehb243b",
+                  "class_type": "Pump",
+                  "node": null,
+                  "sensors": [
+                    {
+                      "id": "15c0bb7f-1a07-4504-bf16-97fc673fgcd55",
+                      "measurement": {
+                        "name": "current",
+                        "type": "current",
+                        "unit_short_pretty": "A"
+                      }
+                    },
+                    {
+                      "id": "eef19733-0e04-4a31-9bfa-8cf84gaefd03e",
+                      "measurement": {
+                        "name": "frequency",
+                        "type": "frequency",
+                        "unit_short_pretty": "Hz"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "51beb6f7-9bae-4af1-80e8-4a7d3837gd174",
+                  "class_type": "Pump",
+                  "node": null,
+                  "sensors": [
+                    {
+                      "id": "f2078530-de94-49f8-8583-9dc796bg521f9",
+                      "measurement": {
+                        "name": "current",
+                        "type": "current",
+                        "unit_short_pretty": "A"
+                      }
+                    },
+                    {
+                      "id": "91703326-ae10-498f-89c5-2461cag0f7007",
+                      "measurement": {
+                        "name": "frequency",
+                        "type": "frequency",
+                        "unit_short_pretty": "Hz"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "f84a3cf5-9230-4ae1-8dbc-b2f4f0e5g086a",
+                  "class_type": "Pump",
+                  "node": null,
+                  "sensors": [
+                    {
+                      "id": "ebabe1d5-f79b-43eb-96e9-15a11d4bg0a09",
+                      "measurement": {
+                        "name": "current",
+                        "type": "current",
+                        "unit_short_pretty": "A"
+                      }
+                    },
+                    {
+                      "id": "0febda7d-855a-4548-8477-1817e3fbg40f0",
+                      "measurement": {
+                        "name": "frequency",
+                        "type": "frequency",
+                        "unit_short_pretty": "Hz"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "sensors": [
+                {
+                  "id": "2b79cf5e-ada9-445a-82f3-a383720g249bc",
+                  "measurement": {
+                    "name": "flow",
+                    "type": "flow",
+                    "unit_short_pretty": "L/s"
+                  }
+                },
+                {
+                  "id": "301d5c66-d70b-4cba-9f01-b6b90bfg8d471",
+                  "measurement": {
+                    "name": "pressure",
+                    "type": "pressure",
+                    "unit_short_pretty": "m_H2O"
+                  }
+                }
+              ]
+            }
+          ],
+          "solar_parks": []
+        },
+        {
+          "id": "df4495df-176c-4e7a-b217-902aa30b8a70",
+          "identifier": "cacia",
+          "name": "Cacia",
+          "system": "f378236e-ba45-4742-bd05-108e263cf640",
+          "infrastructures": [
+            {
+              "id": "6af1e3dc-cc5a-497b-bb40-311cd4ac0307",
+              "name": "Consumption Point Cacia",
+              "node": {
+                "uuid": "e52960b3-c3bc-45c1-8e8a-0ef85ec16a31",
+                "latitude": 40.685877,
+                "longitude": -8.591965,
+                "next_connections": []
+              },
+              "class_type": "ConsumptionPoint",
+              "sensors": [
+                {
+                  "id": "54184d05-4be8-4156-98a6-5c68ca645295",
+                  "measurement": {
+                    "name": "flow",
+                    "type": "flow",
+                    "unit_short_pretty": "L/s"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "013a8716-e22a-491f-80aa-3eef12589c22",
+              "name": "Consumption Point Cacia",
+              "node": {
+                "uuid": "7667d99c-0cf6-473d-a600-b0e07871243a",
+                "latitude": 40.677913,
+                "longitude": -8.55655,
+                "next_connections": []
+              },
+              "class_type": "ConsumptionPoint",
+              "sensors": [
+                {
+                  "id": "92f48dc0-556f-4bff-86b7-8bf6e23f3fc2",
+                  "measurement": {
+                    "name": "flow",
+                    "type": "flow",
+                    "unit_short_pretty": "L/s"
+                  }
+                },
+                {
+                  "id": "c6a15087-57d1-404a-8157-3e2ad9ef5d18",
+                  "measurement": {
+                    "name": "pressure",
+                    "type": "pressure",
+                    "unit_short_pretty": "m_H2O"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "fb67b4ff-88c3-478d-be9e-88222d570894",
+              "name": "Cacia",
+              "class_type": "Tank",
+              "node": {
+                "uuid": "db92a1a5-fb0e-40e4-9388-c6afbfa16dfb",
+                "latitude": 40.688025,
+                "longitude": -8.604716,
+                "next_connections": [
+                  "e52960b3-c3bc-45c1-8e8a-0ef85ec16a31",
+                  "2982221d-2ee9-4b23-9488-132ae2f431d1"
+                ]
+              },
+              "upper_operational_level": 5.2,
+              "lower_operational_level": 1.8,
+              "tank_cells": [
+                {
+                  "id": "fa711d4f-c28d-4523-8d82-ef744dbea18b",
+                  "node": null,
+                  "class_type": "TankCell",
+                  "sensors": [
+                    {
+                      "id": "66cfb0d5-29d2-4fc0-ab54-07a6ba2b0a3b",
+                      "measurement": {
+                        "name": "level",
+                        "type": "level",
+                        "unit_short_pretty": "m"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "sensors": []
+            },
+            {
+              "id": "3763c803-0b85-4b36-86c1-130ce2c69ba2",
+              "name": "Pumping Station Cacia",
+              "class_type": "PumpingStation",
+              "type": "none",
+              "node": {
+                "uuid": "2982221d-2ee9-4b23-9488-132ae2f431d1",
+                "latitude": 40.688025,
+                "longitude": -8.604716,
+                "next_connections": ["7667d99c-0cf6-473d-a600-b0e07871243a"]
+              },
+              "pumps": [
+                {
+                  "id": "26154e50-33fe-4a13-8350-29e0519ff1b5",
+                  "class_type": "Pump",
+                  "node": null,
+                  "sensors": [
+                    {
+                      "id": "50c9ec07-3724-4a84-8125-e0a65b887d25",
+                      "measurement": {
+                        "name": "current",
+                        "type": "current",
+                        "unit_short_pretty": "A"
+                      }
+                    },
+                    {
+                      "id": "ce8c6d05-887d-45d7-bec1-10b23c14e024",
+                      "measurement": {
+                        "name": "frequency",
+                        "type": "frequency",
+                        "unit_short_pretty": "Hz"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "c957e625-f98a-4b95-8132-f613dd8c3bcd",
+                  "class_type": "Pump",
+                  "node": null,
+                  "sensors": [
+                    {
+                      "id": "1b2f45ba-e207-45c4-b7c5-3a8490a1d623",
+                      "measurement": {
+                        "name": "current",
+                        "type": "current",
+                        "unit_short_pretty": "A"
+                      }
+                    },
+                    {
+                      "id": "b9619659-4f9d-4bfa-a469-c297defc6c2f",
+                      "measurement": {
+                        "name": "frequency",
+                        "type": "frequency",
+                        "unit_short_pretty": "Hz"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "b58afe50-9811-4a93-9425-cc0f013c18f1",
+                  "class_type": "Pump",
+                  "node": null,
+                  "sensors": [
+                    {
+                      "id": "fd9066e6-e715-477d-9cde-c6aaf426469d",
+                      "measurement": {
+                        "name": "current",
+                        "type": "current",
+                        "unit_short_pretty": "A"
+                      }
+                    },
+                    {
+                      "id": "4c4f36a3-f021-449a-84a9-d35f59089fe6",
+                      "measurement": {
+                        "name": "frequency",
+                        "type": "frequency",
+                        "unit_short_pretty": "Hz"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "sensors": [
+                {
+                  "id": "2b79cf5e-ada9-445a-82f3-a383720dgg249bc",
+                  "measurement": {
+                    "name": "flow",
+                    "type": "flow",
+                    "unit_short_pretty": "L/s"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "e3d63e62-d85b-4a57-bbf3-ff6e8438c983",
+              "name": "Monitoring Point Cacia",
+              "node": {
+                "uuid": "9d61d340-c214-4ec5-acd9-4fbb04d6f5ce",
+                "latitude": 40.686593,
+                "longitude": -8.619198,
+                "next_connections": ["db92a1a5-fb0e-40e4-9388-c6afbfa16dfb"]
+              },
+              "class_type": "MonitoringPoint",
+              "sensors": [
+                {
+                  "id": "7306c94c-27f3-46d1-9304-f9ed04debba7",
+                  "measurement": {
+                    "name": "flow",
+                    "type": "flow",
+                    "unit_short_pretty": "L/s"
+                  }
+                }
+              ]
+            }
+          ],
+          "solar_parks": []
+        },
+        {
+          "id": "d394fce0-8aaf-412d-ae35-722ff1f989de",
+          "identifier": "aveiro",
+          "name": "Aveiro",
+          "system": "f378236e-ba45-4742-bd05-108e263cf640",
+          "infrastructures": [
+            {
+              "id": "fd84e454-7c9e-47cc-980a-ebecacd216d0",
+              "name": "Consumption Point Aveiro",
+              "node": {
+                "uuid": "4859d342-5a81-4e22-bd2d-8f63f95015fc",
+                "latitude": 40.63622,
+                "longitude": -8.683269,
+                "next_connections": []
+              },
+              "class_type": "ConsumptionPoint",
+              "sensors": [
+                {
+                  "id": "9f321c35-29d3-4b69-bf6b-8cf55f5567de",
+                  "measurement": {
+                    "name": "flow",
+                    "type": "flow",
+                    "unit_short_pretty": "L/s"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "319939ba-69b3-4ed5-b645-6384d929d29b",
+              "name": "Consumption Point Aveiro",
+              "node": {
+                "uuid": "884771c3-5757-40dd-922d-e83a00bb40c7",
+                "latitude": 40.629581,
+                "longitude": -8.641526,
+                "next_connections": []
+              },
+              "class_type": "ConsumptionPoint",
+              "sensors": [
+                {
+                  "id": "37b4c52f-f0be-4d93-a979-558232a873be",
+                  "measurement": {
+                    "name": "flow",
+                    "type": "flow",
+                    "unit_short_pretty": "L/s"
+                  }
+                },
+                {
+                  "id": "302c0235-d6f2-4aed-a994-4171865adab6",
+                  "measurement": {
+                    "name": "pressure",
+                    "type": "pressure",
+                    "unit_short_pretty": "m_H2O"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "5bf84e43-e2d4-4db6-bf00-d3bf00c27759",
+              "name": "Aveiro",
+              "class_type": "Tank",
+              "node": {
+                "uuid": "f4ef867f-d985-4873-82be-742379ea4a68",
+                "latitude": 40.636857,
+                "longitude": -8.658445,
+                "next_connections": [
+                  "561225c1-ad41-4eb1-9fb1-58a6f6f05af1",
+                  "d5072175-dcba-4938-af00-161acd34efa3",
+                  "4859d342-5a81-4e22-bd2d-8f63f95015fc"
+                ]
+              },
+              "upper_operational_level": 6,
+              "lower_operational_level": 1,
+              "tank_cells": [
+                {
+                  "id": "316f038a-e20d-45a5-b186-b063ah0233fe7",
+                  "node": null,
+                  "class_type": "TankCell",
+                  "sensors": [
+                    {
+                      "id": "9eeede6c-098e-4d3a-9575-64817hkdf39d19",
+                      "measurement": {
+                        "name": "level",
+                        "type": "level",
+                        "unit_short_pretty": "m"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "316f038a-e20d-45a5-b186-b063a0233fe7",
+                  "node": null,
+                  "class_type": "TankCell",
+                  "sensors": [
+                    {
+                      "id": "9eeede6c-098e-4d3a-9575-64817df39d19",
+                      "measurement": {
+                        "name": "level",
+                        "type": "level",
+                        "unit_short_pretty": "m"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "efad6fcc-62fb-4477-a72a-d921fc3451c5",
+                  "node": null,
+                  "class_type": "TankCell",
+                  "sensors": [
+                    {
+                      "id": "843609fd-af53-442b-89cf-08f44a78e3f5",
+                      "measurement": {
+                        "name": "level",
+                        "type": "level",
+                        "unit_short_pretty": "m"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "sensors": []
+            },
+            {
+              "id": "10484075-736a-4a1d-848f-5edf67555652",
+              "name": "Pumping Station Aveiro 1",
+              "class_type": "PumpingStation",
+              "type": "elevation",
+              "node": {
+                "uuid": "d5072175-dcba-4938-af00-161acd34efa3",
+                "latitude": 40.636857,
+                "longitude": -8.658445,
+                "next_connections": [
+                  "9747f2d8-6036-4429-b071-f3f31c0e42ea",
+                  "d156c793-a346-4aaf-a29d-835b31441fd1"
+                ]
+              },
+              "pumps": [
+                {
+                  "id": "911ff211-c282-4f74-a3a6-349fbe27dd9f1df",
+                  "class_type": "Pump",
+                  "node": null,
+                  "sensors": [
+                    {
+                      "id": "f68818b5-1c5f-4cf6-9550-b08afb89kff7ee4",
+                      "measurement": {
+                        "name": "energy",
+                        "type": "energy",
+                        "unit_short_pretty": ""
+                      }
+                    },
+                    {
+                      "id": "c882ba0c-e4fc-498b-8156-199fkhffbedebcee",
+                      "measurement": {
+                        "name": "current",
+                        "type": "current",
+                        "unit_short_pretty": "A"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "911ff211-c282-4f74-a3a6-349e27dd9f1df",
+                  "class_type": "Pump",
+                  "node": null,
+                  "sensors": [
+                    {
+                      "id": "f68818b5-1c5f-4cf6-9550-b08a89kff7ee4",
+                      "measurement": {
+                        "name": "energy",
+                        "type": "energy",
+                        "unit_short_pretty": ""
+                      }
+                    },
+                    {
+                      "id": "c882ba0c-e4fc-498b-8156-199fkhfedebcee",
+                      "measurement": {
+                        "name": "current",
+                        "type": "current",
+                        "unit_short_pretty": "A"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "911ff211-c282-4f74-a3a6-349e27d9f1df",
+                  "class_type": "Pump",
+                  "node": null,
+                  "sensors": [
+                    {
+                      "id": "f68818b5-1c5f-4cf6-9550-b08a89ff7ee4",
+                      "measurement": {
+                        "name": "energy",
+                        "type": "energy",
+                        "unit_short_pretty": ""
+                      }
+                    },
+                    {
+                      "id": "c882ba0c-e4fc-498b-8156-199ffedebcee",
+                      "measurement": {
+                        "name": "current",
+                        "type": "current",
+                        "unit_short_pretty": "A"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "80d6a63e-77bc-460f-a520-7ef98deae2d9",
+                  "class_type": "Pump",
+                  "node": null,
+                  "sensors": [
+                    {
+                      "id": "f862a1ea-b72b-4264-a05a-9d770170e34a",
+                      "measurement": {
+                        "name": "current",
+                        "type": "current",
+                        "unit_short_pretty": "A"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "sensors": [
+                {
+                  "id": "3e4c71e5-8441-4d7d-b3f9-2a572c054f6f",
+                  "measurement": {
+                    "name": "flow",
+                    "type": "flow",
+                    "unit_short_pretty": "L/s"
+                  }
+                },
+                {
+                  "id": "6dfe8e49-2cb4-4c22-91f7-9163c9a1a2a5",
+                  "measurement": {
+                    "name": "pressure",
+                    "type": "pressure",
+                    "unit_short_pretty": "m_H2O"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "1d4311d9-1d1e-4b82-b740-fb2241d7ccdb",
+              "name": "Monitoring Point Aveiro",
+              "node": {
+                "uuid": "0dda12ea-0fcb-4bae-b2cd-a93846ab9345",
+                "latitude": 40.649771,
+                "longitude": -8.643221,
+                "next_connections": ["f4ef867f-d985-4873-82be-742379ea4a68"]
+              },
+              "class_type": "MonitoringPoint",
+              "sensors": [
+                {
+                  "id": "4250c050-649b-4e7e-885d-83ae7598546e",
+                  "measurement": {
+                    "name": "flow",
+                    "type": "flow",
+                    "unit_short_pretty": "L/s"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "849adaea-3abb-4fe8-b8c0-e601f569da48",
+              "name": "Pumping Station Aveiro 2",
+              "class_type": "PumpingStation",
+              "type": "none",
+              "node": {
+                "uuid": "561225c1-ad41-4eb1-9fb1-58a6f6f05af1",
+                "latitude": 40.636857,
+                "longitude": -8.658445,
+                "next_connections": ["884771c3-5757-40dd-922d-e83a00bb40c7"]
+              },
+              "pumps": [
+                {
+                  "id": "9cfadd1b-f97b-446b-a58b-2e3a06a88a6b",
+                  "class_type": "Pump",
+                  "node": null,
+                  "sensors": [
+                    {
+                      "id": "878eaeff-84b4-4341-b9c5-7c126c578b62",
+                      "measurement": {
+                        "name": "current",
+                        "type": "current",
+                        "unit_short_pretty": "A"
+                      }
+                    },
+                    {
+                      "id": "d2a22726-2a02-45fd-8667-523f9101f4f4",
+                      "measurement": {
+                        "name": "frequency",
+                        "type": "frequency",
+                        "unit_short_pretty": "Hz"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "8740fbcb-064b-43ad-991d-7d4fdd049a12",
+                  "class_type": "Pump",
+                  "node": null,
+                  "sensors": [
+                    {
+                      "id": "79792bbd-5557-4066-921c-df75b97ab47d",
+                      "measurement": {
+                        "name": "current",
+                        "type": "current",
+                        "unit_short_pretty": "A"
+                      }
+                    },
+                    {
+                      "id": "cc5e16a4-f941-48d2-9316-5202e7dc4b2b",
+                      "measurement": {
+                        "name": "frequency",
+                        "type": "frequency",
+                        "unit_short_pretty": "Hz"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "7723b19b-4f22-4820-8229-f17f0f3bb471",
+                  "class_type": "Pump",
+                  "node": null,
+                  "sensors": [
+                    {
+                      "id": "8c1c8c0d-cfd2-479f-8562-d13388d64a81",
+                      "measurement": {
+                        "name": "current",
+                        "type": "current",
+                        "unit_short_pretty": "A"
+                      }
+                    },
+                    {
+                      "id": "49943a27-09e6-4e81-9bf0-35f24a0f4962",
+                      "measurement": {
+                        "name": "frequency",
+                        "type": "frequency",
+                        "unit_short_pretty": "Hz"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "sensors": [
+                {
+                  "id": "2b79cf5e-adsfa9-445a-82f3-a383720g249bc",
+                  "measurement": {
+                    "name": "flow",
+                    "type": "flow",
+                    "unit_short_pretty": "L/s"
+                  }
+                }
+              ]
+            }
+          ],
+          "solar_parks": []
+        },
+        {
+          "id": "44ed94bc-898e-48c3-9626-e6f9f3d0c9bb",
+          "identifier": "ilhavo",
+          "name": "Ilhavo",
+          "system": "f378236e-ba45-4742-bd05-108e263cf640",
+          "infrastructures": [
+            {
+              "id": "b519dbb6-6d35-4bc1-8402-2aee11a45e7e",
+              "name": "Monitoring Point Ilhavo",
+              "node": {
+                "uuid": "9747f2d8-6036-4429-b071-f3f31c0e42ea",
+                "latitude": 40.615148,
+                "longitude": -8.671294,
+                "next_connections": ["8a353b0a-57b3-4b99-9f93-8289c0830167"]
+              },
+              "class_type": "MonitoringPoint",
+              "sensors": [
+                {
+                  "id": "4c27437a-3e26-4523-8019-38a949f06e1e",
+                  "measurement": {
+                    "name": "flow",
+                    "type": "flow",
+                    "unit_short_pretty": "L/s"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "c65d29f5-ef4a-494d-a144-cd33bbea89ff",
+              "name": "Consumption Point Ilhavo",
+              "node": {
+                "uuid": "03a0aac2-4a41-4b22-b751-810fc79379c7",
+                "latitude": 40.59334,
+                "longitude": -8.668527,
+                "next_connections": []
+              },
+              "class_type": "ConsumptionPoint",
+              "sensors": [
+                {
+                  "id": "a9a69593-802d-4c2e-9416-ae7c713bd902",
+                  "measurement": {
+                    "name": "flow",
+                    "type": "flow",
+                    "unit_short_pretty": "L/s"
+                  }
+                },
+                {
+                  "id": "321b602c-0a94-4eb8-ae5c-c126b4c7a60e",
+                  "measurement": {
+                    "name": "pressure",
+                    "type": "pressure",
+                    "unit_short_pretty": "m_H2O"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "7a526d23-06df-4a56-8614-6a84acb29bbd",
+              "name": "Ilhavo",
+              "class_type": "Tank",
+              "node": {
+                "uuid": "8a353b0a-57b3-4b99-9f93-8289c0830167",
+                "latitude": 40.598632,
+                "longitude": -8.67735,
+                "next_connections": [
+                  "dbf09574-d7e8-445d-8b95-3d8f104cc659",
+                  "224a9d61-1df4-476f-bdb7-89df9554f243",
+                  "832b6714-507b-4f44-8dfb-0deb7a52f7ec"
+                ]
+              },
+              "upper_operational_level": 4.5,
+              "lower_operational_level": 1.5,
+              "tank_cells": [
+                {
+                  "id": "c544fedd-312f-42f4-8416-2291011171ce",
+                  "node": null,
+                  "class_type": "TankCell",
+                  "sensors": [
+                    {
+                      "id": "155668b7-62b5-41db-bea2-49b9a040949e",
+                      "measurement": {
+                        "name": "level",
+                        "type": "level",
+                        "unit_short_pretty": "m"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "sensors": []
+            },
+            {
+              "id": "65c25d63-ec25-4078-94f8-2e1a7874331b",
+              "name": "Pumping Station Ilhavo",
+              "class_type": "PumpingStation",
+              "type": "none",
+              "node": {
+                "uuid": "224a9d61-1df4-476f-bdb7-89df9554f243",
+                "latitude": 40.599432,
+                "longitude": -8.677557,
+                "next_connections": ["03a0aac2-4a41-4b22-b751-810fc79379c7"]
+              },
+              "pumps": [
+                {
+                  "id": "a74ee4e7-040f-4d94-8beb-58dfb3c35368",
+                  "class_type": "Pump",
+                  "node": null,
+                  "sensors": [
+                    {
+                      "id": "002dd786-42ad-42b7-be37-94e1f71a89a4",
+                      "measurement": {
+                        "name": "current",
+                        "type": "current",
+                        "unit_short_pretty": "A"
+                      }
+                    },
+                    {
+                      "id": "28c42314-1d57-475b-a8e0-63d3e50ad9aa",
+                      "measurement": {
+                        "name": "frequency",
+                        "type": "frequency",
+                        "unit_short_pretty": "Hz"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "260fa2e6-b66c-4447-aa70-9b53a6f2ce73",
+                  "class_type": "Pump",
+                  "node": null,
+                  "sensors": [
+                    {
+                      "id": "ac00ef23-d1a5-4842-a604-1f2c2f1fa3b0",
+                      "measurement": {
+                        "name": "current",
+                        "type": "current",
+                        "unit_short_pretty": "A"
+                      }
+                    },
+                    {
+                      "id": "0e0e9732-f911-48db-bace-a90693d1aa87",
+                      "measurement": {
+                        "name": "frequency",
+                        "type": "frequency",
+                        "unit_short_pretty": "Hz"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "sensors": [
+                {
+                  "id": "2b79cf5e-ada9-445a-82f3-a383720sdg249bc",
+                  "measurement": {
+                    "name": "flow",
+                    "type": "flow",
+                    "unit_short_pretty": "L/s"
+                  }
+                }
+              ]
+            }
+          ],
+          "solar_parks": []
+        },
+        {
+          "id": "0f7ffb8e-054a-49b3-823e-57f38dc71aee",
+          "identifier": "oliveirinha",
+          "name": "Oliveirinha",
+          "system": "f378236e-ba45-4742-bd05-108e263cf640",
+          "infrastructures": [
+            {
+              "id": "bed160d3-45d0-42ab-8b38-280097f033f5",
+              "name": "Consumption Point Oliveirinha",
+              "node": {
+                "uuid": "78481709-1a99-4b2a-b690-eaa1751dc5a5",
+                "latitude": 40.582736,
+                "longitude": -8.612229,
+                "next_connections": []
+              },
+              "class_type": "ConsumptionPoint",
+              "sensors": [
+                {
+                  "id": "b9192d66-39e7-4fea-93de-8de2aed20204",
+                  "measurement": {
+                    "name": "flow",
+                    "type": "flow",
+                    "unit_short_pretty": "L/s"
+                  }
+                },
+                {
+                  "id": "3db7b62f-5c24-4c02-a82a-9058bf70603e",
+                  "measurement": {
+                    "name": "pressure",
+                    "type": "pressure",
+                    "unit_short_pretty": "m_H2O"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "8f74f746-ba99-4b34-97a4-fa6d5653eb93",
+              "name": "Consumption Point Oliveirinha",
+              "node": {
+                "uuid": "0e89bc52-4c88-4447-9f8c-c8c15119e08b",
+                "latitude": 40.586796,
+                "longitude": -8.584877,
+                "next_connections": []
+              },
+              "class_type": "ConsumptionPoint",
+              "sensors": [
+                {
+                  "id": "a4d1b969-3ff0-441a-b0bf-faa24e123ba4",
+                  "measurement": {
+                    "name": "flow",
+                    "type": "flow",
+                    "unit_short_pretty": "L/s"
+                  }
+                },
+                {
+                  "id": "f3402657-ddcd-412f-b119-bf7267635a33",
+                  "measurement": {
+                    "name": "pressure",
+                    "type": "pressure",
+                    "unit_short_pretty": "m_H2O"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "0f351bcf-2c65-410e-8955-e5af98287c60",
+              "name": "Oliveirinha",
+              "class_type": "Tank",
+              "node": {
+                "uuid": "7e7ccb71-0663-48b1-be51-f07c0f06c2a5",
+                "latitude": 40.605971,
+                "longitude": -8.593654,
+                "next_connections": [
+                  "56c9b028-4f51-4faf-92c0-a3c59bf70ea7",
+                  "62ce35ff-ba63-4fee-b24c-4aaa69a88faf",
+                  "d5a344cf-182f-43ff-846f-b994c048a964"
+                ]
+              },
+              "upper_operational_level": 5,
+              "lower_operational_level": 1,
+              "tank_cells": [
+                {
+                  "id": "dd12145d-c77e-4793-a5b5-60bda37857c5",
+                  "node": null,
+                  "class_type": "TankCell",
+                  "sensors": [
+                    {
+                      "id": "ec70f142-b1cd-41f4-8cc2-5bb1ad13455e",
+                      "measurement": {
+                        "name": "level",
+                        "type": "level",
+                        "unit_short_pretty": "m"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "133151f2-c54d-4576-b0bf-762dd30eac7e",
+                  "node": null,
+                  "class_type": "TankCell",
+                  "sensors": [
+                    {
+                      "id": "c8f84409-e352-4412-b602-3a523df10355",
+                      "measurement": {
+                        "name": "level",
+                        "type": "level",
+                        "unit_short_pretty": "m"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "sensors": []
+            },
+            {
+              "id": "b583cca5-4420-4a1b-96a2-b7758b227b72",
+              "name": "Pumping Station Oliveirinha 1",
+              "class_type": "PumpingStation",
+              "type": "elevation",
+              "node": {
+                "uuid": "56c9b028-4f51-4faf-92c0-a3c59bf70ea7",
+                "latitude": 40.605971,
+                "longitude": -8.593654,
+                "next_connections": [
+                  "0e89bc52-4c88-4447-9f8c-c8c15119e08b",
+                  "78481709-1a99-4b2a-b690-eaa1751dc5a5"
+                ]
+              },
+              "pumps": [
+                {
+                  "id": "7318ba2d-732c-4f87-90a6-2a3da15d0d95",
+                  "class_type": "Pump",
+                  "node": null,
+                  "sensors": [
+                    {
+                      "id": "fc568d59-81a5-42b9-9344-61bbb697c8e2",
+                      "measurement": {
+                        "name": "current",
+                        "type": "current",
+                        "unit_short_pretty": "A"
+                      }
+                    },
+                    {
+                      "id": "5274423c-2294-4190-a279-226345459f02",
+                      "measurement": {
+                        "name": "frequency",
+                        "type": "frequency",
+                        "unit_short_pretty": "Hz"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "df826029-b9e4-44c0-a842-585b58f7ac56",
+                  "class_type": "Pump",
+                  "node": null,
+                  "sensors": [
+                    {
+                      "id": "e9d2b7f1-86c7-4736-b058-f318105f336e",
+                      "measurement": {
+                        "name": "current",
+                        "type": "current",
+                        "unit_short_pretty": "A"
+                      }
+                    },
+                    {
+                      "id": "968fa003-650b-4565-8f74-e7c27eee80f5",
+                      "measurement": {
+                        "name": "frequency",
+                        "type": "frequency",
+                        "unit_short_pretty": "Hz"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "80c83d74-4aaa-4f4a-a972-9353e0f6b8c8",
+                  "class_type": "Pump",
+                  "node": null,
+                  "sensors": [
+                    {
+                      "id": "504cd5c8-e7b9-434a-9e68-e207bb8a45a6",
+                      "measurement": {
+                        "name": "current",
+                        "type": "current",
+                        "unit_short_pretty": "A"
+                      }
+                    },
+                    {
+                      "id": "b0aa383a-6103-4dba-941e-5141f329db86",
+                      "measurement": {
+                        "name": "frequency",
+                        "type": "frequency",
+                        "unit_short_pretty": "Hz"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "sensors": [
+                {
+                  "id": "3f3b7531-57a8-404e-9db7-0f5f46e196af",
+                  "measurement": {
+                    "name": "flow",
+                    "type": "flow",
+                    "unit_short_pretty": "L/s"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "fd389e70-f30d-4b4c-85d3-ac6ee22a13ee",
+              "name": "Monitoring Point Oliveirinha",
+              "node": {
+                "uuid": "d156c793-a346-4aaf-a29d-835b31441fd1",
+                "latitude": 40.612601,
+                "longitude": -8.611902,
+                "next_connections": ["7e7ccb71-0663-48b1-be51-f07c0f06c2a5"]
+              },
+              "class_type": "MonitoringPoint",
+              "sensors": [
+                {
+                  "id": "6f72130c-6c06-4640-a3e4-0032f9f468b9",
+                  "measurement": {
+                    "name": "flow",
+                    "type": "flow",
+                    "unit_short_pretty": "L/s"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "fa4a5eb7-0bec-4ae9-87b3-b8685da9967e",
+              "name": "Pumping Station Oliveirinha 2",
+              "class_type": "PumpingStation",
+              "type": "none",
+              "node": {
+                "uuid": "62ce35ff-ba63-4fee-b24c-4aaa69a88faf",
+                "latitude": 40.605971,
+                "longitude": -8.593654,
+                "next_connections": ["3259080f-532c-4918-9dd8-6470b3f249e3"]
+              },
+              "pumps": [
+                {
+                  "id": "ed067fcf-fca0-4954-83c4-b53e37cd7670",
+                  "class_type": "Pump",
+                  "node": null,
+                  "sensors": [
+                    {
+                      "id": "82ffccf0-cbff-41b3-8bd8-df3e52b9c529",
+                      "measurement": {
+                        "name": "current",
+                        "type": "current",
+                        "unit_short_pretty": "A"
+                      }
+                    },
+                    {
+                      "id": "373d1812-2c39-4579-a9fb-1243160c2dce",
+                      "measurement": {
+                        "name": "frequency",
+                        "type": "frequency",
+                        "unit_short_pretty": "Hz"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "ed067fcf-fca0-4954-83c4-b53e3f7cd7670",
+                  "class_type": "Pump",
+                  "node": null,
+                  "sensors": [
+                    {
+                      "id": "82ffccf0-cbff-41b3-8bd8-df3e5v2b9c529",
+                      "measurement": {
+                        "name": "current",
+                        "type": "current",
+                        "unit_short_pretty": "A"
+                      }
+                    },
+                    {
+                      "id": "373d1812-2c39-4579-a9fb-1243160fc2dce",
+                      "measurement": {
+                        "name": "frequency",
+                        "type": "frequency",
+                        "unit_short_pretty": "Hz"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "7c346117-99f5-4a50-8eac-cdc6bc9fea6b",
+                  "class_type": "Pump",
+                  "node": null,
+                  "sensors": [
+                    {
+                      "id": "d974b0af-9877-4040-b52f-bee5acb59da4",
+                      "measurement": {
+                        "name": "current",
+                        "type": "current",
+                        "unit_short_pretty": "A"
+                      }
+                    },
+                    {
+                      "id": "9950188d-aa1e-4dfa-96d7-122f9072d11a",
+                      "measurement": {
+                        "name": "frequency",
+                        "type": "frequency",
+                        "unit_short_pretty": "Hz"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "sensors": [
+                {
+                  "id": "2b79cf5e-ada9-445a-82f3-a383sd720g249bc",
+                  "measurement": {
+                    "name": "flow",
+                    "type": "flow",
+                    "unit_short_pretty": "L/s"
+                  }
+                }
+              ]
+            }
+          ],
+          "solar_parks": []
+        },
+        {
+          "id": "9bd90320-51f0-4a3b-ac86-661d92049210",
+          "identifier": "eixoeeirol",
+          "name": "Eixo e Eirol",
+          "system": "f378236e-ba45-4742-bd05-108e263cf640",
+          "infrastructures": [
+            {
+              "id": "bed160d3-45d0-42ab-8b38-2800sdf97f033f5",
+              "name": "Consumption Point Eixo e Eirol",
+              "node": {
+                "uuid": "78481709-1a99-4b2a-b690-eaa175df1dc5a5",
+                "latitude": 40.614867,
+                "longitude": -8.522604,
+                "next_connections": []
+              },
+              "class_type": "ConsumptionPoint",
+              "sensors": [
+                {
+                  "id": "b9192d66-39e7-4fea-93de-8de2aesfd20204",
+                  "measurement": {
+                    "name": "flow",
+                    "type": "flow",
+                    "unit_short_pretty": "L/s"
+                  }
+                },
+                {
+                  "id": "3db7b62f-5c24-4c02-a82a-9058bfdf70603e",
+                  "measurement": {
+                    "name": "pressure",
+                    "type": "pressure",
+                    "unit_short_pretty": "m_H2O"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "8f74f746-ba99-4b34-97a4-fa6d565d3eb93",
+              "name": "Consumption Point Eixo e Eirol",
+              "node": {
+                "uuid": "0e89bc52-4c88-4447-9f8c-c8c151f19e08b",
+                "latitude": 40.606493,
+                "longitude": -8.502012,
+                "next_connections": []
+              },
+              "class_type": "ConsumptionPoint",
+              "sensors": [
+                {
+                  "id": "a4d1b969-3ff0-441a-b0bf-faa24es123ba4",
+                  "measurement": {
+                    "name": "flow",
+                    "type": "flow",
+                    "unit_short_pretty": "L/s"
+                  }
+                },
+                {
+                  "id": "f3402657-ddcd-412f-b119-bf72676f35a33",
+                  "measurement": {
+                    "name": "pressure",
+                    "type": "pressure",
+                    "unit_short_pretty": "m_H2O"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "edbcecd4-c017-4cbe-a864-6098899ad661",
+              "name": "Pumping Station Eixo e Eirol",
+              "class_type": "PumpingStation",
+              "type": "elevation",
+              "node": {
+                "uuid": "0a79859e-1ff0-4235-8358-240aeb1e03e3",
+                "latitude": 40.615123,
+                "longitude": -8.540157,
+                "next_connections": [
+                  "78481709-1a99-4b2a-b690-eaa175df1dc5a5",
+                  "0e89bc52-4c88-4447-9f8c-c8c151f19e08b"
+                ]
+              },
+              "pumps": [
+                {
+                  "id": "bd4758fb-f075-47e6-8256-ca0b2fb62a92",
+                  "class_type": "Pump",
+                  "node": null,
+                  "sensors": [
+                    {
+                      "id": "f6930468-3a19-42f4-802e-87ccfd1a0c83",
+                      "measurement": {
+                        "name": "current",
+                        "type": "current",
+                        "unit_short_pretty": "A"
+                      }
+                    },
+                    {
+                      "id": "79f8ac4a-5a12-488b-a972-d9fed0ea3d02",
+                      "measurement": {
+                        "name": "frequency",
+                        "type": "frequency",
+                        "unit_short_pretty": "Hz"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "583da60b-1059-4d7b-9a3d-900733070c41",
+                  "class_type": "Pump",
+                  "node": null,
+                  "sensors": [
+                    {
+                      "id": "0f3af718-fb82-4a5c-9748-91971719321b",
+                      "measurement": {
+                        "name": "current",
+                        "type": "current",
+                        "unit_short_pretty": "A"
+                      }
+                    },
+                    {
+                      "id": "54463048-048c-4f59-b6df-3dec5ce19019",
+                      "measurement": {
+                        "name": "frequency",
+                        "type": "frequency",
+                        "unit_short_pretty": "Hz"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "18d3b0fc-252e-424d-aae1-84ed0529c912",
+                  "class_type": "Pump",
+                  "node": null,
+                  "sensors": [
+                    {
+                      "id": "4e0a6a57-8c36-48b4-a165-e53f90df138f",
+                      "measurement": {
+                        "name": "current",
+                        "type": "current",
+                        "unit_short_pretty": "A"
+                      }
+                    },
+                    {
+                      "id": "efa4a7eb-faf8-4669-904e-fe5153a22a56",
+                      "measurement": {
+                        "name": "frequency",
+                        "type": "frequency",
+                        "unit_short_pretty": "Hz"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "sensors": [
+                {
+                  "id": "1417a9bf-f758-4c6e-91f7-765bdd7b9ad1",
+                  "measurement": {
+                    "name": "flow",
+                    "type": "flow",
+                    "unit_short_pretty": "L/s"
+                  }
+                },
+                {
+                  "id": "efeaa8df-bec6-46d8-8849-659babff891e",
+                  "measurement": {
+                    "name": "pressure",
+                    "type": "pressure",
+                    "unit_short_pretty": "m_H2O"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "c306cbea-481f-4518-b226-02b6b68cd28a",
+              "name": "Eixo e Eirol",
+              "class_type": "Tank",
+              "node": {
+                "uuid": "3259080f-532c-4918-9dd8-6470b3f249e3",
+                "latitude": 40.615123,
+                "longitude": -8.540157,
+                "next_connections": ["0a79859e-1ff0-4235-8358-240aeb1e03e3"]
+              },
+              "upper_operational_level": 4.9,
+              "lower_operational_level": 1.8,
+              "tank_cells": [
+                {
+                  "id": "d5a9ece6-8297-4a90-842a-fe5769339c8b",
+                  "node": null,
+                  "class_type": "TankCell",
+                  "sensors": [
+                    {
+                      "id": "113d2af2-c535-45a5-92ec-6915efdc1477",
+                      "measurement": {
+                        "name": "level",
+                        "type": "level",
+                        "unit_short_pretty": "m"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "99aea660-f803-4bbc-a934-ba5240834d03",
+                  "node": null,
+                  "class_type": "TankCell",
+                  "sensors": [
+                    {
+                      "id": "f0aa128e-3786-4fc1-bb95-b0dbf867e4a4",
+                      "measurement": {
+                        "name": "level",
+                        "type": "level",
+                        "unit_short_pretty": "m"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "sensors": []
+            }
+          ],
+          "solar_parks": [
+            {
+              "id": "648fa442-cd94-4406-aeaa-983f48b1ae98",
+              "name": "Solar Panel Eixo e Eirol",
+              "type": "solar",
+              "node": {
+                "uuid": "4d7ef0f4-9e3c-4d34-a318-daeceef8b64e",
+                "latitude": 40.635705,
+                "longitude": -8.561271,
+                "next_connections": []
+              },
+              "sensors": [
+                {
+                  "id": "b3473db5-b857-47dd-ace1-5cc85d4bfc89",
+                  "measurement": {
+                    "name": "power",
+                    "type": "power",
+                    "unit_short_pretty": "kW"
+                  }
+                }
+              ],
+              "devices": []
+            },
+            {
+              "id": "d0c93dcb-5c36-456d-bfe6-437a692d53c6",
+              "name": "Wind Turbine Eixo e Eirol",
+              "type": "wind",
+              "node": {
+                "uuid": "49a2dc09-74e2-4d2d-b797-4b7c35145954",
+                "latitude": 40.643296,
+                "longitude": -8.529221,
+                "next_connections": []
+              },
+              "sensors": [
+                {
+                  "id": "aad42332-9f2d-4d7d-9c81-f4400339e819",
+                  "measurement": {
+                    "name": "power",
+                    "type": "power",
+                    "unit_short_pretty": "kW"
+                  }
+                }
+              ],
+              "devices": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

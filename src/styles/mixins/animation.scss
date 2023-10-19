@@ -1,0 +1,6 @@
+@mixin setAnimation($name, $duration, $count: 1, $timing-function: ease) {
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-iteration-count: $count;
+  animation-timing-function: $timing-function;
+}

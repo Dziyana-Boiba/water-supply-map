@@ -1,0 +1,44 @@
+@use '../../styles/mixins/common.scss';
+
+.energy-popup {
+  top: 15px !important;
+
+  &_measurement {
+    @include common.table;
+    margin-top: 10px;
+    table {
+      margin: 0 auto;
+    }
+  }
+  &_title {
+    @include common.font(10px, 700, 1.5, center);
+    color: #555;
+    border-bottom: 1px solid #ddd;
+  }
+  &_unit {
+    font-size: 8px;
+    margin-left: 5px;
+  }
+  &_sensor-alert {
+    text-align: center;
+  }
+}
+
+.energy-tooltip {
+  font-family: 'Open Sans';
+  background: rgb(230, 229, 229) !important;
+  border-color: rgba(77, 77, 77, 1) !important;
+  padding: 4px !important;
+  line-height: 0.5 !important;
+
+  &::before {
+    border-top-color: rgba(77, 77, 77, 1) !important;
+  }
+  .value {
+    @include common.font(10px, 700, 0.8, center);
+  }
+  .unit {
+    @include common.font(8px, 400, 0.8, center);
+    margin-left: 3px;
+  }
+}

@@ -1,0 +1,16 @@
+.water-flow {
+  animation: 25s linear infinite Flow;
+  stroke-width: 2px;
+  stroke: #aacff9;
+  stroke-opacity: 1;
+  stroke-dasharray: 0.5 100;
+  stroke-linecap: round;
+  stroke-dashoffset: 1000;
+  /* transition: stroke-dashoffset infinite ease; */
+}
+
+@keyframes Flow {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

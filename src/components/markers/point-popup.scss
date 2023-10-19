@@ -1,0 +1,25 @@
+@use '../../styles/mixins/common.scss';
+
+.consumption-popup,
+.monitoring-popup {
+  top: 6px !important;
+  &_measurement {
+    @include common.table;
+    margin-top: 10px;
+    table {
+      margin: 0 auto;
+    }
+  }
+  &_title {
+    @include common.font(10px, 700, 1.5, center);
+    color: #555;
+    border-bottom: 1px solid #ddd;
+  }
+  &_unit {
+    font-size: 8px;
+    margin-left: 5px;
+  }
+  &_sensor-alert {
+    text-align: center;
+  }
+}

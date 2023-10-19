@@ -1,0 +1,46 @@
+@use '../../styles/mixins/common.scss';
+
+.tank-tooltip {
+  @include common.flex(column, center, center);
+  font-family: 'Open Sans';
+  line-height: 1.2;
+  padding: 0 !important;
+  border: none !important;
+  &_title {
+    @include common.font(9px, 700, 1.2, center);
+    display: block;
+    width: 100%;
+    background: rgba(178, 178, 178, 0.3);
+    color: rgb(96, 150, 180);
+    padding: 2px;
+  }
+  &_level {
+    @include common.flex(row, center, center, 2px);
+    padding: 3px;
+
+    &_max-min {
+      @include common.font(8px, 700, 1, start);
+      color: rgb(77, 77, 77);
+      padding: 2px;
+    }
+    &_number {
+      @include common.flex(row, center, center, 2px);
+      @include common.font(8px, 600, 1.5, center);
+      color: #fff;
+      background: rgb(96, 150, 180);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+      border-radius: 3px;
+      padding: 0px 2px;
+    }
+    &_hyphen {
+      width: 10px;
+      height: 2px;
+      background: rgb(178, 178, 178);
+      border-radius: 3px;
+      margin: 1px 0 0 1px;
+    }
+    &_number_unit {
+      @include common.font(8px, 500, 1, center);
+    }
+  }
+}
