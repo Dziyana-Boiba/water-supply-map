@@ -1,6 +1,6 @@
 # Water Supply Map
 
-[Live Demo](https://db-weathersunshine.netlify.app/)
+[Live Demo](https://dziyana-boiba.github.io/water-supply-map/)
 
 ## Tech Stack
 
