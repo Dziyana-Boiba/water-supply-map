@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/water-supply-map/static/css/main.72f67a56.css",
+    "main.js": "/water-supply-map/static/js/main.c4131fdb.js",
+    "static/media/Digital7-rg1mL.ttf": "/water-supply-map/static/media/Digital7-rg1mL.79c8511a32aab83743b7.ttf",
+    "static/media/light-map.jpg": "/water-supply-map/static/media/light-map.3e7c6650653f052bcb65.jpg",
+    "static/media/dark-map.jpg": "/water-supply-map/static/media/dark-map.ff42512788819e24e62d.jpg",
+    "static/media/pump-motor1.svg": "/water-supply-map/static/media/pump-motor1.6743a609430b7360123e.svg",
+    "static/media/tap-small.svg": "/water-supply-map/static/media/tap-small.cd673535b324d541a4e137c620617528.svg",
+    "index.html": "/water-supply-map/index.html",
+    "main.72f67a56.css.map": "/water-supply-map/static/css/main.72f67a56.css.map",
+    "main.c4131fdb.js.map": "/water-supply-map/static/js/main.c4131fdb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72f67a56.css",
+    "static/js/main.c4131fdb.js"
+  ]
+}
